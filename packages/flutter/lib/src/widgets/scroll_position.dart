@@ -165,7 +165,7 @@ abstract class ScrollPosition extends ViewportOffset with ScrollMetrics {
   double _impliedVelocity = 0;
 
   @override
-  double get pixels => _pixels!;
+  double get pixels => _pixels??0.0;
   double? _pixels;
 
   @override
